@@ -94,7 +94,7 @@ const Header: React.FC = () => {
                 <div className="flex-shrink-0">
                     <img 
                         src="components/teja.jpg"
-                        alt="Akkala Teja Swaroop" 
+                        alt="Akkala Teja Swaroop Profile Image" 
                         className="rounded-full w-48 h-48 md:w-56 md:h-56 lg:w-72 lg:h-72 object-cover border-4 border-accent/80 shadow-2xl"
                     />
                 </div>
