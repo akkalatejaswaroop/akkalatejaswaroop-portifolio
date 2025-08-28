@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akkala Teja Swaroop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Smooth transitions for all properties */
+      * {
+          transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+      }
+
+      /* 1. Default: Cyber Dark */
+      :root, [data-theme='cyber-dark'] {
+          --color-primary: #0D1117;
+          --color-secondary: #161B22;
+          --color-accent: #58A6FF;
+          --color-text-primary: #C9D1D9;
+          --color-text-secondary: #8B949E;
+          --color-border-color: #30363D;
+      }
+
+      /* 2. Solarized Light */
+      [data-theme='solarized-light'] {
+          --color-primary: #fdf6e3;
+          --color-secondary: #eee8d5;
+          --color-accent: #268bd2;
+          --color-text-primary: #586e75;
+          --color-text-secondary: #839496;
+          --color-border-color: #93a1a1;
+      }
+
+      /* 3. Forest Green */
+      [data-theme='forest-green'] {
+          --color-primary: #1A202C;
+          --color-secondary: #2D3748;
+          --color-accent: #48BB78;
+          --color-text-primary: #F7FAFC;
+          --color-text-secondary: #A0AEC0;
+          --color-border-color: #4A5568;
+      }
+
+      /* 4. Rose Pine */
+      [data-theme='rose-pine'] {
+          --color-primary: #191724;
+          --color-secondary: #1f1d2e;
+          --color-accent: #eb6f92;
+          --color-text-primary: #e0def4;
+          --color-text-secondary: #908caa;
+          --color-border-color: #403d52;
+      }
+
+      /* 5. Synthwave */
+      [data-theme='synthwave'] {
+          --color-primary: #2b1f48;
+          --color-secondary: #342951;
+          --color-accent: #ff84e8;
+          --color-text-primary: #f4d3ff;
+          --color-text-secondary: #c996e0;
+          --color-border-color: #554476;
+      }
+      
+      /* 6. Dracula */
+      [data-theme='dracula'] {
+          --color-primary: #282a36;
+          --color-secondary: #44475a;
+          --color-accent: #bd93f9;
+          --color-text-primary: #f8f82;
+          --color-text-secondary: #6272a4;
+          --color-border-color: #6272a4;
+      }
+
+      /* 7. Nord */
+      [data-theme='nord'] {
+          --color-primary: #2E3440;
+          --color-secondary: #3B4252;
+          --color-accent: #88C0D0;
+          --color-text-primary: #ECEFF4;
+          --color-text-secondary: #D8DEE9;
+          --color-border-color: #4C566A;
+      }
+
+      /* 8. Gruvbox */
+      [data-theme='gruvbox'] {
+          --color-primary: #282828;
+          --color-secondary: #3c3836;
+          --color-accent: #fabd2f;
+          --color-text-primary: #ebdbb2;
+          --color-text-secondary: #a89984;
+          --color-border-color: #504945;
+      }
+
+      /* 9. Midnight Dusk */
+      [data-theme='midnight-dusk'] {
+          --color-primary: #0f0c29;
+          --color-secondary: #302b63;
+          --color-accent: #e94560;
+          --color-text-primary: #f0f0f0;
+          --color-text-secondary: #a0a0a0;
+          --color-border-color: #24243e;
+      }
+
+      /* 10. Oceanic Breeze */
+      [data-theme='oceanic-breeze'] {
+          --color-primary: #E6F7FF;
+          --color-secondary: #B0E0E6;
+          --color-accent: #007BFF;
+          --color-text-primary: #003366;
+          --color-text-secondary: #5A7D9A;
+          --color-border-color: #90C3D4;
+      }
+      
+      /* 11. Matrix Green */
+      [data-theme='matrix-green'] {
+          --color-primary: #000000;
+          --color-secondary: #0D0D0D;
+          --color-accent: #39FF14;
+          --color-text-primary: #00FF00;
+          --color-text-secondary: #008F11;
+          --color-border-color: #222222;
+      }
+
+      /* 12. Toasted Almond */
+      [data-theme='toasted-almond'] {
+          --color-primary: #f5f5dc;
+          --color-secondary: #eaddc9;
+          --color-accent: #8b4513;
+          --color-text-primary: #5d4037;
+          --color-text-secondary: #795548;
+          --color-border-color: #d2b48c;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary': 'var(--color-primary)',
+              'secondary': 'var(--color-secondary)',
+              'accent': 'var(--color-accent)',
+              'text-primary': 'var(--color-text-primary)',
+              'text-secondary': 'var(--color-text-secondary)',
+              'border-color': 'var(--color-border-color)',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            keyframes: {
+              aurora: {
+                '0%': { backgroundPosition: '0% 50%' },
+                '50%': { backgroundPosition: '100% 50%' },
+                '100%': { backgroundPosition: '0% 50%' },
+              },
+            },
+            animation: {
+              aurora: 'aurora 15s ease infinite',
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "framer-motion": "https://esm.sh/framer-motion@^11.3.8",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.16.0",
+    "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0",
+    "remark-gfm": "https://aistudiocdn.com/remark-gfm@^4.0.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-primary text-text-primary">
+    <script>
+      // On page load, apply the stored theme to prevent a flash of default theme
+      (function() {
+        const theme = localStorage.getItem('portfolio-theme') || 'cyber-dark';
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
