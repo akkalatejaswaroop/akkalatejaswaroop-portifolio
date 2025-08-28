@@ -25,6 +25,7 @@ const DownloadIcon: React.FC<{ className?: string }> = ({ className }) => (
     </svg>
 );
 
+// FIX: Add links for Education and AI Assistant sections to improve navigation.
 const NAV_LINKS = [
     { href: '#about', label: 'About' },
     { href: '#skills', label: 'Skills' },
@@ -32,6 +33,7 @@ const NAV_LINKS = [
     { href: '#projects', label: 'Projects' },
     { href: '#publications', label: 'Publications' },
     { href: '#education', label: 'Education' },
+    { href: '#ai-chat', label: 'AI Assistant' },
     { href: '#contact', label: 'Contact' },
 ];
 
@@ -53,7 +55,7 @@ const Header: React.FC = () => {
                        </a>
                    ))}
                 </nav>
-                 <a href="https://drive.google.com/uc?export=download&id=1pyZX7bGl0hxHSf7lijp6Wrt8wKkYGbX-" download="Akkala_Teja_Swaroop_Resume.pdf" className="hidden md:inline-flex items-center gap-2 bg-accent/10 text-accent text-sm font-medium px-3 py-2 rounded-md hover:bg-accent hover:text-primary transition-colors">
+                 <a href="/resume.pdf" download="Akkala_Teja_Swaroop_Resume.pdf" className="hidden md:inline-flex items-center gap-2 bg-accent/10 text-accent text-sm font-medium px-3 py-2 rounded-md hover:bg-accent hover:text-primary transition-colors">
                     <DownloadIcon className="w-4 h-4" />
                     Resume
                 </a>
@@ -64,7 +66,16 @@ const Header: React.FC = () => {
       <div id="home" className="relative bg-primary overflow-hidden min-h-screen flex items-center pt-20">
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/20 via-purple-500/20 to-pink-500/20 opacity-40 animate-aurora -z-0"></div>
         <div className="container mx-auto px-4 md:px-8 lg:px-16 relative z-10 py-16 md:py-0">
-            <div className="flex flex-col-reverse md:flex-row items-center justify-center md:justify-between w-full gap-8 md:gap-16">
+            <div className="flex flex-col md:flex-row items-center justify-center w-full gap-12 lg:gap-16">
+                
+                {/* Profile Image */}
+                <div className="flex-shrink-0">
+                    <img 
+                        src="components/teja.jpg" 
+                        alt="Akkala Teja Swaroop profile picture" 
+                        className="w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full object-cover border-4 border-accent/50 shadow-lg transition-all duration-300 hover:shadow-accent/40 hover:scale-105"
+                    />
+                </div>
                 
                 {/* Text Content */}
                 <div className="text-center md:text-left">
@@ -84,20 +95,12 @@ const Header: React.FC = () => {
                             <MailIcon className="w-8 h-8" />
                         </a>
                     </div>
-                    <a href="https://drive.google.com/uc?export=download&id=1pyZX7bGl0hxHSf7lijp6Wrt8wKkYGbX-" download="Akkala_Teja_Swaroop_Resume.pdf" className="md:hidden mt-8 inline-flex items-center justify-center gap-2 bg-accent text-primary font-bold py-3 px-6 rounded-lg hover:bg-accent/90 transition-colors w-full max-w-xs mx-auto">
+                    <a href="/resume.pdf" download="Akkala_Teja_Swaroop_Resume.pdf" className="md:hidden mt-8 inline-flex items-center justify-center gap-2 bg-accent text-primary font-bold py-3 px-6 rounded-lg hover:bg-accent/90 transition-colors w-full max-w-xs mx-auto">
                         <DownloadIcon className="w-5 h-5" />
                         Download Resume
                     </a>
                 </div>
 
-                {/* Image */}
-                <div className="flex-shrink-0">
-                    <img 
-                        src="components/teja.jpg"
-                        alt="Akkala Teja Swaroop Profile Image" 
-                        className="rounded-full w-48 h-48 md:w-56 md:h-56 lg:w-72 lg:h-72 object-cover border-4 border-accent/80 shadow-2xl"
-                    />
-                </div>
             </div>
         </div>
       </div>
